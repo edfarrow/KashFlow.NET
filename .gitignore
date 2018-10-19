@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/KashFlow.NET/.vs
+/KashFlow.NET/KashFlow.NET/bin/Debug/netstandard2.0
+/KashFlow.NET/KashFlow.NET/obj

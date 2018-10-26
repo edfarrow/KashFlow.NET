@@ -1,7 +1,4 @@
 ﻿using KashFlow.NET.Models.Shared;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace KashFlow.NET.Models.Report
 {
@@ -42,5 +39,8 @@ namespace KashFlow.NET.Models.Report
 		public NominalCode[] CapitalReserves { get; set; }
 		
 		public decimal CapitalReservesTotal { get; set; }
+
+		public BalanceSheetReport(): base() { }
+
 	}
 }

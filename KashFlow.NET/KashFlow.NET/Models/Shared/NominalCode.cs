@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using KashFlow.NET.Interfaces.Models.Shared;
 
 namespace KashFlow.NET.Models.Shared
 {
 	/// <summary>
 	/// Nominal codes are the unique reference numbers given to each nominal account for a business
 	/// </summary>
-	public class NominalCode : KashFlowBase<KashFlow.NominalCode>
+	public class NominalCode : KashFlowBase<KashFlow.NominalCode>, IToData<KashFlow.NominalCode>
 	{
 		/// <summary>
 		/// The system-wide, unique ID number for the nominal code (immutable)
@@ -49,6 +47,11 @@ namespace KashFlow.NET.Models.Shared
 			Debit = nominalCode.debit;
 			Credit = nominalCode.credit;
 			Balance = nominalCode.balance;
+		}
+
+		public KashFlow.NominalCode ToData()
+		{
+			throw new System.NotImplementedException();
 		}
 	}
 }

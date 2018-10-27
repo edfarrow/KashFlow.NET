@@ -8,12 +8,12 @@
 		/// <summary>
 		/// The name of the month
 		/// </summary>
-		public string Name { get; set; }
+		public string Name { get; private set; }
 
 		/// <summary>
 		/// The value of Debits – Credits for the Customer / Supplier  within the month 
 		/// </summary>
-		public decimal Value { get; set; }
+		public decimal Value { get; private set; }
 
 		public AgedDebtorsCreditorsPeriod()
 		{

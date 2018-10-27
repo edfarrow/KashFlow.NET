@@ -48,7 +48,7 @@ namespace KashFlow.NET.Models.Shared
 			Credit = nominalCode.credit;
 			Balance = nominalCode.balance;
 		}
-
+		
 		public KashFlow.NominalCode ToData()
 		{
 			throw new System.NotImplementedException();

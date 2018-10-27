@@ -279,7 +279,9 @@ namespace KashFlow.NET.Models.Customer
 		/// </summary>
 		public string Website { get; set; }
 
-		public Customer(KashFlow.Customer customer)
+		public Customer() : base() { }
+
+		public Customer(KashFlow.Customer customer) : base(customer)
 		{
 			Address1 = customer.Address1;
 			Address2 = customer.Address2;

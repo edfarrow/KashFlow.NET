@@ -20,6 +20,7 @@
     <Folder Include="Interfaces\Models\Bank\" />
     <Folder Include="Methods\" />
     <Folder Include="Models\Client\" />
+    <Folder Include="Models\Receipt\" />
   </ItemGroup>
 
 </Project>

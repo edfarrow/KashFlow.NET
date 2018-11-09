@@ -60,6 +60,17 @@ namespace KashFlow_NET.Models.Product
 			Price = product.ProductPrice;
 		}
 
+		public Product(KashFlow.ProductsFull product)
+		{
+			ProductID = product.ProductID;
+			Name = product.ProductName;
+			Code = product.ProductCode;
+			Description = product.ProductDescription;
+			AreStockLevelsManaged = product.ManageStockLevels == 1;
+			QuantityInStock = product.QtyInStock;
+			Price = product.ProductPrice;
+		}
+
 		public KashFlow.Product ToData()
 		{
 			return new KashFlow.Product() 

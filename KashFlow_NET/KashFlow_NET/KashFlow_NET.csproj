@@ -18,7 +18,7 @@
   <ItemGroup>
     <Folder Include="Interfaces\Models\Account\" />
     <Folder Include="Interfaces\Models\Bank\" />
-    <Folder Include="Methods\" />
+    <Folder Include="Interfaces\Methods\" />
     <Folder Include="Models\Client\" />
   </ItemGroup>
 

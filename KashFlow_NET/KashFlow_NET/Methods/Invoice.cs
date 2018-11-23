@@ -36,5 +36,15 @@ namespace KashFlow_NET
 			var result = await _kashflowClient.InsertInvoiceLineAsync(insertRequest);
 			return result.InsertInvoiceLineResult;
 		}
+
+		public async Task InvoiceEmailSend(Models.Invoice.InvoiceEmail invoiceEmail)
+		{
+			var rawEmail = invoiceEmail.ToData();
+			rawEmail.UserName = _username;
+			rawEmail.Password = _password;
+
+			var result = await _kashflowClient.EmailInvoiceAsync(rawEmail);
+			return;
+		}
 	}
 }
